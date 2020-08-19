@@ -6,12 +6,13 @@
     <title>Yusuf Hendricks</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- HEADER START -->
     <header>
-        <div class="menu-toggler">
+        <div class="menu">
             <div class="bar half start"></div>
             <div class="bar"></div>
             <div class="bar half end"> </div>
@@ -28,7 +29,7 @@
                     <a href="#services" class="nav-link">Services</a>
                 </li>
                 <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#port" class="nav-link">Portfolio</a>
                 </li>
                 <li>
                     <a href="#experiences" class="nav-link">Experience</a>
@@ -49,7 +50,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="profile-img" data-aos="fade-right" data-aos-delay="300" >
-                <img src="/images/profile.jpeg" alt="profile image" srcset=""> 
+                <img src="/images/ysuuf_hendricks_hs2.jpg" alt="profile image" srcset=""> 
             </div>
             <div class="about-details" data-aos="fade-left" data-aos-delay="600">
                 <div class="about-heading ">
@@ -125,57 +126,57 @@
         </div>
     </section>
 <!-- SERVICES END -->
-<!-- PORTFOLIO START -->
-    <section class="portfolio" id="portfolio">
+<!-- port START -->
+    <section class="port" id="port">
         <div class="container">
             <div class="section-heading">
                 <h1>Portfolio</h1>
                 <h6>Some of my recent work</h6>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <div class="port-item">
+                <div class="port-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
                     <img src="/images/portitem1.jpeg" alt="" srcset="">
                 </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                <div class="port-description" data-aos="fade-left" data-aos-delay="600">
                     <h6>Web Development</h6>
                     <h1>Blog Website</h1>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam recusandae, velit libero officia reprehenderit non fuga a sapiente ex quaerat sequi mollitia similique ratione necessitatibus id vero delectus! Atque, ullam?
-                    </p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam recusandae, velit libero officia reprehenderit non<span id="dots"> ...</span><span id="more">fuga a sapiente ex quaerat sequi mollitia similique ratione necessitatibus id vero delectus! Atque, ullam?</span></p>
+                    <button onclick="BtnFunction()" id="readmore">Read more</button>
                     <a href="#" class="cta">View Details</a>
                 </div>
             </div>
 
-            <div class="portfolio-item">
-                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+            <div class="port-item">
+                <div class="port-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
                     <h6>Web Design</h6>
                     <h1>Product Layout </h1>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam recusandae, velit libero officia reprehenderit non fuga a sapiente ex quaerat sequi mollitia similique ratione necessitatibus id vero delectus! Atque, ullam?
-                    </p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam recusandae<span id="dots2"> ...</span><span id="more2">velit libero officia reprehenderit non fuga asapiente ex quaerat sequi mollitia similique ratione necessitatibus id vero delectus! Atque, ullam?</span></p>
+                    <button onclick="BtnFunction2()" id="readmore2">Read more</button>
                     <a href="#" class="cta">View Details</a>
                 </div>
-                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+                <div class="port-img" data-aos="fade-left" data-aos-delay="1200">
                     <img src="/images/portitem2.jpeg" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
+            <div class="port-item">
+                <div class="port-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
                     <img src="/images/portitem3.jpeg" alt="" srcset="">
                 </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+                <div class="port-description" data-aos="fade-left" data-aos-delay="1800">
                     <h6>Web Design</h6>
                     <h1>Prodect Sketch</h1>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam recusandae, velit libero officia reprehenderit non fuga a sapiente ex quaerat sequi mollitia similique ratione necessitatibus id vero delectus! Atque, ullam?
-                    </p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.<span id="dots3"> ...</span><span id="more3">Ipsam recusandae, velit libero officia reprehenderit non fuga a sapiente ex quaerat sequi mollitia similique ratione necessitatibus id vero delectus! Atque, ullam?</span></p>
+                    <button onclick="BtnFunction3()" id="readmore3">Read more</button>
                     <a href="#" class="cta">View Details</a>
                 </div>
             </div>
         </div>
     </section>
-<!-- PORTFOLIO END -->
+<!-- port END -->
 <!-- EXPERIENCE START -->
     <section class="experience" id="experience">
         <div class="container">
@@ -220,7 +221,7 @@
                 <label for="name">Email:</label>
                 <input type="text" id="name" name="email" placeholder="Enter your email..." required>
                 <label for="service">Services:</label>
-                <select name="services" id="service">
+                <select name="services" id="services">
                     <option value="">Web Design</option>
                     <option value="">Web Develoment</option>
                     <option value="">Web Design Development</option>
